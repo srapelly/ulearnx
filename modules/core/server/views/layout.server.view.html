@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  <base href="/">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  <meta name="fragment" content="!">
+
+  <!-- Apple META -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <!-- Facebook META -->
+  <meta property="fb:app_id" content="{{facebookAppId}}">
+  <meta property="og:site_name" content="{{title}}">
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:description" content="{{description}}">
+  <meta property="og:url" content="{{url}}">
+  <meta property="og:image" content="{{logo}}">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter META -->
+  <meta name="twitter:title" content="{{title}}">
+  <meta name="twitter:description" content="{{description}}">
+  <meta name="twitter:url" content="{{url}}">
+  <meta name="twitter:image" content="{{logo}}">
+
+  <!-- Fav Icon -->
+  <link href="{{favicon}}" rel="shortcut icon" type="image/x-icon">
+
+  <!-- Application CSS Files -->
+  {% for cssFile in cssFiles %}<link rel="stylesheet" href="{{cssFile}}">{% endfor %}
+
+<link rel="stylesheet" type="text/css" href="lib/custom/rs-plugin/css/settings.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="lib/custom/fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="lib/custom/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="lib/custom/css/animate.css">
+<link rel="stylesheet" type="text/css" href="lib/custom/css/menu.css">
+<link rel="stylesheet" type="text/css" href="lib/custom/css/carousel.css">
+<link rel="stylesheet" type="text/css" href="lib/custom/css/bxslider.css">
+<link rel="stylesheet" type="text/css" href="lib/custom/css/style.css">
+
+
+</head>
+
+<body class="ng-cloak">
+
+  <div id="loader">
+        <div class="loader-container">
+            <img src="lib/custom/images/site.gif" alt="" class="loader-site">
+        </div>
+    </div>
+
+<div id="wrapper">
+  <header ng-include="'/modules/core/client/views/header.client.view.html'" class="header"></header>
+  <section class="white section">
+      {% block content %}{% endblock %}
+  </section>
+
+  <footer class="dark footer section">
+             <div class="container">
+                 <div class="row">
+                     <div class="col-md-3 col-md-6 col-xs-12">
+                         <div class="widget">
+                             <div class="widget-title">
+                                 <h4>About LearnPLUS</h4>
+                                 <hr>
+                             </div>
+                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took...</p>
+
+                             <a href="#" class="btn btn-default">Read More</a>
+                         </div><!-- end widget -->
+                     </div><!-- end col -->
+
+                     <div class="col-md-3 col-md-6 col-xs-12">
+                         <div class="widget">
+                             <div class="widget-title">
+                                 <h4>Recent Tweets</h4>
+                                 <hr>
+                             </div>
+
+                             <div class="twitter-widget">
+                                 <ul class="latest-tweets">
+                                     <li>
+                                         <p><a href="#" title="">@Mark</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                                         <span>2 hours ago</span>
+                                     </li>
+                                     <li>
+                                         <p><a href="#" title="">@Envato</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                                         <span>2 hours ago</span>
+                                     </li>
+                                 </ul><!-- end latest-tweet -->
+                             </div><!-- end twitter-widget -->
+
+                         </div><!-- end widget -->
+                     </div><!-- end col -->
+
+                     <div class="col-md-3 col-md-6 col-xs-12">
+                         <div class="widget">
+                             <div class="widget-title">
+                                 <h4>Popular Courses</h4>
+                                 <hr>
+                             </div>
+
+                             <ul class="popular-courses">
+                                 <li>
+                                     <a href="single-course.html" title=""><img class="img-thumbnail" src="upload/service_01.png" alt=""></a>
+                                 </li>
+                                 <li>
+                                     <a href="single-course.html" title=""><img class="img-thumbnail" src="upload/service_02.png" alt=""></a>
+                                 </li>
+                                 <li>
+                                     <a href="single-course.html" title=""><img class="img-thumbnail" src="upload/service_03.png" alt=""></a>
+                                 </li>
+                                 <li>
+                                     <a href="single-course.html" title=""><img class="img-thumbnail" src="upload/service_04.png" alt=""></a>
+                                 </li>
+                                 <li>
+                                     <a href="single-course.html" title=""><img class="img-thumbnail" src="upload/service_05.png" alt=""></a>
+                                 </li>
+                                 <li>
+                                     <a href="single-course.html" title=""><img class="img-thumbnail" src="upload/service_06.png" alt=""></a>
+                                 </li>
+                                 <li>
+                                     <a href="single-course.html" title=""><img class="img-thumbnail" src="upload/service_07.png" alt=""></a>
+                                 </li>
+                                 <li>
+                                     <a href="single-course.html" title=""><img class="img-thumbnail" src="upload/service_08.png" alt=""></a>
+                                 </li>
+                                 <li>
+                                     <a href="single-course.html" title=""><img class="img-thumbnail" src="upload/service_09.png" alt=""></a>
+                                 </li>
+                             </ul>
+                         </div><!-- end widget -->
+                     </div><!-- end col -->
+
+                     <div class="col-md-3 col-md-6 col-xs-12">
+                         <div class="widget">
+                             <div class="widget-title">
+                                 <h4>Contact Details</h4>
+                                 <hr>
+                             </div>
+
+                             <ul class="contact-details">
+                                 <li><i class="fa fa-link"></i> <a href="#">www.yoursite.com</a></li>
+                                 <li><i class="fa fa-envelope"></i> <a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
+                                 <li><i class="fa fa-phone"></i> +90 123 45 67</li>
+                                 <li><i class="fa fa-fax"></i> +90 123 45 68</li>
+                                 <li><i class="fa fa-home"></i> Envato INC 22 Elizabeth Str. Melbourne. Victoria 8777.</li>
+                             </ul>
+
+                         </div><!-- end widget -->
+                     </div><!-- end col -->
+                 </div><!-- end row -->
+             </div><!-- end container -->
+         </footer><!-- end section -->
+
+         <section class="copyright">
+             <div class="container">
+                 <div class="row">
+                     <div class="col-md-6 text-left">
+                         <p>© 2015 LearnPLUS Pty Ltd. by <a href="#">Template Visual</a></p>
+                     </div><!-- end col -->
+                     <div class="col-md-6 text-right">
+                         <ul class="list-inline">
+                             <li><a href="#">Terms of Usage</a></li>
+                             <li><a href="#">Privacy Policy</a></li>
+                             <li><a href="#">Sitemap</a></li>
+
+                         </ul>
+                     </div>
+                 </div><!-- end row -->
+             </div><!-- end container -->
+         </section><!-- end section -->
+ 	</div><!-- end wrapper -->
+
+  <!--Embedding The User Object-->
+  <script type="text/javascript">
+    var user = {{ user | json | safe }};
+  </script>
+
+  <!--Load The Socket.io File-->
+  <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+
+  <!--Application JavaScript Files-->
+  {% for jsFile in jsFiles %}<script type="text/javascript" src="{{jsFile}}"></script>{% endfor %}
+  <script src="lib/custom/js/jquery.min.js"></script>
+  <script src="lib/custom/js/bootstrap.min.js"></script>
+  <script src="lib/custom/js/retina.js"></script>
+  <script src="lib/custom/js/wow.js"></script>
+  <script src="lib/custom/js/carousel.js"></script>
+  <!-- CUSTOM PLUGINS -->
+  <script src="lib/custom/js/custom.js"></script>
+  <!-- SLIDER REV -->
+  <script src="lib/custom/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+  <script src="lib/custom/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+  <script>
+    jQuery(document).ready(function() {
+
+        });
+    </script>
+    <script src="lib/custom/js/bxslider.js"></script>
+    <script type="text/javascript">
+         /* ==============================================
+           Vertical Carousel
+       =============================================== */
+       (function($) {
+       "use strict";
+         
+       })(jQuery);
+       </script>
+  {% if livereload %}
+  <!--Livereload script rendered -->
+  <script type="text/javascript" src="{{host}}:35729/livereload.js"></script>
+  {% endif %}
+</body>
+
+</html>
